@@ -195,7 +195,7 @@ figure.effect-bubba:hover p {
   aspect-ratio: 16/9;
   border-radius: 10px;
   transition: transform 0.2s ease-in-out;
-  box-shadow: 2px 2px 2px 1px black;
+  box-shadow: 2px 2px 2px 1px rgb(200, 200, 200);
 }
 
 .grid-items:hover {
