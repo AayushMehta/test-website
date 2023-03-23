@@ -110,7 +110,7 @@ figure.effect-bubba figcaption::after {
   right: 30px;
   bottom: 30px;
   left: 30px;
-  content: "";
+  content: '';
   opacity: 0;
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, transform 0.35s;
@@ -159,4 +159,24 @@ figure.effect-bubba:hover p {
   opacity: 1;
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
+}
+
+.portfolio-section {
+  padding: 80px 0;
+}
+
+.portfolio-container {
+  width: 100%;
+  max-width: 80vw;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.grid-items {
+  border: 1px solid black;
+  aspect-ratio: 16/9;
+  background: url('../images/image.png') no-repeat center/cover;
+  border-radius: 10px;
 }
