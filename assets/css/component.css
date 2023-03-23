@@ -180,3 +180,9 @@ figure.effect-bubba:hover p {
   background: url('../images/image.png') no-repeat center/cover;
   border-radius: 10px;
 }
+
+.google-map {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+}
