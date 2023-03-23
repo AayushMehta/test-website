@@ -110,7 +110,7 @@ figure.effect-bubba figcaption::after {
   right: 30px;
   bottom: 30px;
   left: 30px;
-  content: '';
+  content: "";
   opacity: 0;
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, transform 0.35s;
@@ -177,7 +177,7 @@ figure.effect-bubba:hover p {
 .grid-items {
   border: 1px solid black;
   aspect-ratio: 16/9;
-  background: url('../images/image.png') no-repeat center/cover;
+  background: url("../images/image.png") no-repeat center/cover;
   border-radius: 10px;
 }
 
