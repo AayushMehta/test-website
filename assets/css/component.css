@@ -3,6 +3,9 @@
   width: 100%;
   list-style: none;
 }
+#home {
+  height: 100vh;
+}
 
 /* Common style */
 .hover-css figure {
@@ -174,15 +177,61 @@ figure.effect-bubba:hover p {
   gap: 2rem;
 }
 
+.relative {
+  position: relative;
+  /* z-index: -1; */
+}
+
+.absolute {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  /* z-index: 1; */
+}
+
 .grid-items {
-  border: 1px solid black;
   aspect-ratio: 16/9;
-  background: url("../images/image.png") no-repeat center/cover;
   border-radius: 10px;
+  transition: transform 0.2s ease-in-out;
+  box-shadow: 2px 2px 2px 1px black;
+}
+
+.grid-items:hover {
+  cursor: pointer;
+  transform: scale(0.9);
+}
+
+.grid-1 {
+  background: url("../images/automicle.png") no-repeat center/cover;
+}
+
+.grid-2 {
+  background: url("../images/omni.png") no-repeat center/cover;
+}
+
+.grid-3 {
+  background: url("../images/excru.png") no-repeat center/cover;
+}
+
+.grid-4 {
+  background: url("../images/yoga.png") no-repeat center/cover;
+}
+.grid-5 {
+  background: url("../images/discover-jodhpur-cover.png") no-repeat center/cover;
+}
+.grid-6 {
+  background: url("../images/mehta-rishabh.png") no-repeat center/cover;
 }
 
 .google-map {
   display: flex;
   justify-content: center;
   margin-bottom: 100px;
+}
+
+.info_details a {
+  text-decoration: none;
+  color: rgb(102, 102, 102);
 }
