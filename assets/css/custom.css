@@ -595,12 +595,20 @@ section.services {
   top: 110%;
   width: 135px;
 }
+
 .serviceBox {
   margin-bottom: 50px;
 }
+
 .service-icon {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
 }
+
+.service-content {
+  text-align: center;
+}
+
 .service-icon span.step i {
   color: #666;
   font-size: 45px;
@@ -722,235 +730,10 @@ div.portfolio_cat ul li.active_cat {
 /*----------------------------------------*/
 /*  07. People area css
 /*----------------------------------------*/
-.people_section {
-  background-color: #fff;
-  padding-bottom: 80px;
-  padding-top: 85px;
-}
-.people-underline {
-  position: relative;
-}
-.people-title {
-  margin-bottom: 80px;
-  position: relative;
-}
-.people-title h2 {
-  color: #454345;
-  display: inline-block;
-  font-size: 35px;
-  font-weight: 700;
-  letter-spacing: 0.1em;
-  padding-bottom: 2px;
-  position: relative;
-  text-transform: uppercase;
-}
-.people-title::before {
-  background-color: #111;
-  content: "";
-  height: 2px;
-  left: 0;
-  margin: 0 auto;
-  position: absolute;
-  right: 0;
-  text-align: center;
-  top: 110%;
-  width: 135px;
-}
-.team {
-  margin: 40px;
-}
-.team-member {
-  margin: 15px 0;
-  padding: 0;
-}
-.ImageWrapper img {
-  display: block;
-  width: 100%;
-}
-.StyleNumber {
-  padding: 12px;
-}
-.team-member:hover {
-  margin: 15px 0;
-  padding: 0;
-  -moz-box-shadow: 0px 5px 5px #ccc;
-  -webkit-box-shadow: 0px 5px 5px #ccc;
-  box-shadow: 0px 5px 5px #ccc;
-  transition: all 0.5s;
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-}
-.StyleNumber > p {
-  font-size: 14px;
-  margin-top: 4px;
-}
-
-/* help_section css */
-section.help_section {
-  background-color: #fafafa;
-  padding-bottom: 80px;
-  padding-top: 80px;
-}
-.help-title > h3 {
-  color: #454345;
-  font-size: 30px;
-  font-weight: 700;
-  letter-spacing: 0.1em;
-  margin-bottom: 25px;
-}
-.help-title > h4 {
-  margin-bottom: 20px;
-}
-.help-title i {
-  font-size: 30px;
-}
-.button {
-  background-color: #c6c6c6;
-  border: none;
-  color: #ffffff;
-  text-align: center;
-  font-size: 22px;
-  padding: 10px;
-  width: 180px;
-  transition: all 0.5s;
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  cursor: pointer;
-  margin: 5px;
-}
-.button span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: all 0.5s;
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-}
-.button span:after {
-  content: "\00bb";
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: all 0.5s;
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-}
-.button:hover span {
-  padding-right: 25px;
-  color: #454345;
-}
-.button:hover span:after {
-  opacity: 1;
-  right: 0;
-  color: #454345;
-}
 
 /*----------------------------------------*/
 /*  08. Review area css
 /*----------------------------------------*/
-section.review_section {
-  background-color: #fff;
-  padding-top: 80px;
-  padding-bottom: 80px;
-}
-.clients_review {
-  padding-bottom: 130px;
-}
-.review-title {
-  margin-bottom: 80px;
-  position: relative;
-}
-.review-title h2 {
-  color: #454345;
-  display: inline-block;
-  font-size: 35px;
-  font-weight: 700;
-  letter-spacing: 0.1em;
-  padding-bottom: 2px;
-  position: relative;
-  text-transform: uppercase;
-}
-.review-title::before {
-  background-color: #111;
-  content: "";
-  height: 2px;
-  left: 0;
-  margin: 0 auto;
-  position: absolute;
-  right: 0;
-  text-align: center;
-  top: 110%;
-  width: 135px;
-}
-
-/***** Testimonial Carousel Css  *****/
-.clients_review a.right.carousel-control {
-  background: transparent none repeat scroll 0 0;
-}
-.clients_review a.carousel-control.left {
-  background: transparent none repeat scroll 0 0;
-}
-.restart-carousel ol.carousel-indicators .active {
-  background-color: transparent;
-  height: 100px;
-  margin: 0;
-  width: 100px;
-  opacity: 1;
-  border: 4px solid#454345;
-}
-.restart-carousel ol.carousel-indicators li {
-  transition: all 0.3s;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  border: 4px solid #ccc;
-  border-radius: 50%;
-  cursor: pointer;
-  display: inline-block;
-  height: 50px;
-  margin: 4px;
-  text-indent: -999px;
-  width: 50px;
-  opacity: 0.4;
-  overflow: hidden;
-}
-.restart-carousel .carousel-inner .item p {
-  color: #333;
-  margin: 0 auto;
-  max-width: 768px;
-  padding-top: 80px;
-  text-align: center;
-}
-.restart-carousel .carousel-inner .item p::before {
-  color: #fafafa;
-  content: "";
-  font-family: Fontawesome;
-  font-size: 80px;
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: -18px;
-  z-index: 55;
-}
-.restart-carousel .carousel-inner .item h2 {
-  color: #333;
-  text-align: center;
-  font-size: 18px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-.restart-carousel ol.carousel-indicators {
-  bottom: -120px;
-}
-.restart-carousel.carousel-inner img {
-  border-radius: 50%;
-  display: block;
-  height: auto;
-  max-width: 100%;
-}
-.restart-carousel ol li img {
-  border-radius: 50%;
-}
 
 /*----------------------------------------*/
 /*  09. Contact area css
